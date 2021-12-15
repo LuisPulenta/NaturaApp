@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaturaApp.Common", "NaturaApp.Common\NaturaApp.Common.csproj", "{C6983934-E102-4E3A-942C-1F8B41A6D080}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaturaApp.Api", "NaturaApp.Api\NaturaApp.Api.csproj", "{022E9076-499C-4AE6-A46D-D43A56E39C17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6983934-E102-4E3A-942C-1F8B41A6D080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6983934-E102-4E3A-942C-1F8B41A6D080}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6983934-E102-4E3A-942C-1F8B41A6D080}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6983934-E102-4E3A-942C-1F8B41A6D080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{022E9076-499C-4AE6-A46D-D43A56E39C17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{022E9076-499C-4AE6-A46D-D43A56E39C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{022E9076-499C-4AE6-A46D-D43A56E39C17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{022E9076-499C-4AE6-A46D-D43A56E39C17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8BFDA808-D576-454C-A212-DFFE1EAB3D9A}
+	EndGlobalSection
+EndGlobal
