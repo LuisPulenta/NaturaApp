@@ -65,9 +65,9 @@ namespace NaturaApp.Api.Data.Entities
         //TODO: Corregir ruta
         [Display(Name = "Foto")]
         public string ImageFullPath => string.IsNullOrEmpty(ImageId)
-                     ? "https://localhost:44354/images/nouser.png"
-                    : $"https://localhost:44354{ImageId.Substring(1)}";
-        //: $"http://keypress.serveftp.net:88/NaturaAppApi/Images/users/{ImageId}";
+                     ? "http://keypress.serveftp.net:88/NaturaAppApi/Images/nouser.png"
+            : $"http://keypress.serveftp.net:88/NaturaAppApi{ImageId.Substring(1)}";
+
         [Display(Name = "Tipo de usuario")]
         public UserType UserType { get; set; }
 
