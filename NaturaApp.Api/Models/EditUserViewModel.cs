@@ -50,8 +50,9 @@ namespace NaturaApp.Api.Models
 
         [Display(Name = "Foto")]
         public string ImageFullPath => string.IsNullOrEmpty(ImageId)
-             ? "https://localhost:44354/images/nouser.png"
-            : $"https://localhost:44354{ImageId.Substring(1)}";
+                          ? $"http://keypress.serveftp.net:88/NaturaAppApi/images/nouser.png"
+            : $"http://keypress.serveftp.net:88/NaturaAppApi{ImageId.Substring(1)}";
+
 
         [Display(Name = "Foto")]
         public IFormFile ImageFile { get; set; }

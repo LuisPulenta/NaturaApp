@@ -147,5 +147,11 @@ namespace NaturaApp.Api.Helpers
             return await _context.Users
                 .FirstOrDefaultAsync(x => x.Id == id.ToString());
         }
+
+        public async Task<SignInResult> ValidatePasswordAsync(User user, string password)
+        {
+            return await _signInManager.CheckPasswordSignInAsync(user, password, false);
+        }
+
     }
 }
