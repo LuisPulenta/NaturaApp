@@ -82,8 +82,14 @@ namespace NaturaApp.Api.Controllers.Api
             user = new User
             {
                 Address1 = request.Address1,
+                Latitude1 = request.Latitude1,
+                Longitude1 = request.Longitude1,
                 Address2 = request.Address2,
+                Latitude2 = request.Latitude2,
+                Longitude2 = request.Longitude2,
                 Address3 = request.Address3,
+                Latitude3 = request.Latitude3,
+                Longitude3 = request.Longitude3,
                 Document = request.Document,
                 Email = request.Email,
                 FirstName = request.FirstName,
@@ -135,6 +141,16 @@ namespace NaturaApp.Api.Controllers.Api
             user.Address1 = request.Address1;
             user.Address2 = request.Address2;
             user.Address3 = request.Address3;
+
+            user.Latitude1 = 0;
+            user.Longitude1 = 0;
+
+            user.Latitude2 = 0;
+            user.Longitude2 = 0;
+
+            user.Latitude3 = 0;
+            user.Longitude3 = 0;
+
             user.Document = request.Document;
             user.FirstName = request.FirstName;
             user.ImageId = imageId;

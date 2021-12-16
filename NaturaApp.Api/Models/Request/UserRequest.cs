@@ -24,11 +24,20 @@ namespace NaturaApp.Api.Models.Request
         [MaxLength(100, ErrorMessage = "El campo {0} no puede tener más de {1} carácteres.")]
         public string Address1 { get; set; }
 
+        public float Latitude1 { get; set; }
+        public float Longitude1 { get; set; }
+
         [MaxLength(100, ErrorMessage = "El campo {0} no puede tener más de {1} carácteres.")]
         public string Address2 { get; set; }
 
+        public float Latitude2 { get; set; }
+        public float Longitude2 { get; set; }
+
         [MaxLength(100, ErrorMessage = "El campo {0} no puede tener más de {1} carácteres.")]
         public string Address3 { get; set; }
+
+        public float Latitude3 { get; set; }
+        public float Longitude3 { get; set; }
 
         [MaxLength(20, ErrorMessage = "El campo {0} no puede tener más de {1} carácteres.")]
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
