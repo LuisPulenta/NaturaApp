@@ -142,14 +142,14 @@ namespace NaturaApp.Api.Controllers.Api
             user.Address2 = request.Address2;
             user.Address3 = request.Address3;
 
-            user.Latitude1 = 0;
-            user.Longitude1 = 0;
+            user.Latitude1 = request.Latitude1;
+            user.Longitude1 = request.Longitude1;
 
-            user.Latitude2 = 0;
-            user.Longitude2 = 0;
+            user.Latitude2 = request.Latitude2;
+            user.Longitude2 = request.Longitude2;
 
-            user.Latitude3 = 0;
-            user.Longitude3 = 0;
+            user.Latitude3 = request.Latitude3;
+            user.Longitude3 = request.Longitude3;
 
             user.Document = request.Document;
             user.FirstName = request.FirstName;
