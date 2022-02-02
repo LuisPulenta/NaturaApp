@@ -258,7 +258,7 @@ namespace NaturaApp.Api.Controllers
                     "ResetPassword",
                     "Account",
                     new { token = myToken }, protocol: HttpContext.Request.Scheme);
-                _mailHelper.SendMail(model.Email, "NaturaApp - Reseteo de contraseña", $"<h1>NaturaApp - Reseteo de contraseña</h1>" +
+                _mailHelper.SendMail(model.Email, "Reseteo de contraseña", $"<h1>Reseteo de contraseña</h1>" +
                     $"Para establecer una nueva contraseña haga clic en el siguiente enlace:</br></br>" +
                     $"<a href = \"{link}\">Cambio de Contraseña</a>");
                 ViewBag.Message = "Las instrucciones para el cambio de contraseña han sido enviadas a su email.";

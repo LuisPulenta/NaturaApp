@@ -74,7 +74,7 @@ namespace NaturaApp.Api.Controllers
                     token = myToken
                 }, protocol: HttpContext.Request.Scheme);
 
-                Response response = _mailHelper.SendMail(model.Email, "NaturaApp - Confirmación de cuenta", $"<h1>NaturaApp - Confirmación de cuenta</h1>" +
+                Response response = _mailHelper.SendMail(model.Email, "Confirmación de cuenta", $"<h1>Confirmación de cuenta</h1>" +
                     $"Para habilitar el usuario, " +
                     $"por favor hacer clic en el siguiente enlace: </br></br><a href = \"{tokenLink}\">Confirmar Email</a>");
 
@@ -182,7 +182,7 @@ namespace NaturaApp.Api.Controllers
                     token = myToken
                 }, protocol: HttpContext.Request.Scheme);
 
-                Response response = _mailHelper.SendMail(model.Email, "NaturaApp - Confirmación de cuenta", $"<h1>NaturaApp - Confirmación de cuenta</h1>" +
+                Response response = _mailHelper.SendMail(model.Email, "Confirmación de cuenta", $"<h1>Confirmación de cuenta</h1>" +
                     $"Para habilitar el usuario, " +
                     $"por favor hacer clic en el siguiente enlace: </br></br><a href = \"{tokenLink}\">Confirmar Email</a>");
 
