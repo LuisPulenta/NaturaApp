@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,6 +44,7 @@ namespace NaturaApp.Api.Controllers.Api
 
         // GET: api/Users/5
         [HttpGet("{id}")]
+        [Route("/{id}")]
         public async Task<ActionResult<User>> GetUser(string id)
         {
             User user = await _context.Users
@@ -59,6 +58,7 @@ namespace NaturaApp.Api.Controllers.Api
             return user;
         }
 
+       
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(UserRequest request)
         {
